@@ -14,6 +14,14 @@ $(function() {
     }
     );
 
+    const points = document.querySelectorAll('.content-items');
+    const pointsArray = Array.from(points);
+
+    pointsArray.forEach(function(point) {
+        var randomColor = "#" + Math.floor(Math.random() * 16777215).toString(16);
+        point.style.backgroundColor = randomColor;
+    });
+
 
     $('.content-items').click(function() {
         let display = $(this);
