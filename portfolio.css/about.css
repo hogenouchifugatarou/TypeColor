@@ -1,0 +1,199 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#aboutPage {
+    background-color: #22a8de;
+}
+
+body {
+    width: 100vw;
+}
+
+.main {
+    height: calc(100% - 120px);
+    width: 100%;
+    display: flex;
+}
+
+
+.color-image {
+    display: none;
+}
+
+
+
+.image-item {
+    display: none;
+}
+
+#item1 {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+#item4 {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.font {
+    font-size: 15px;
+    font-weight: bold;
+    font-family: cursive;
+    text-align: center;
+}
+
+.font h1 {
+    font-size: 50px;
+}
+
+.explanation {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+
+
+
+#about {
+    grid-column: 2 / 5;
+    grid-row: 2 / 4;
+}
+
+#about-box {
+    height: 100%;
+    display: grid;
+    grid-auto-columns: 1fr;
+    background-image: url(../portfolio.img/WaterColor.jpg);
+    background-size: cover;
+    padding: 0 10px;
+}
+
+.canvas {
+    padding-bottom: 30px;
+}
+
+#title {
+    align-self: center;
+}
+
+
+#details {
+    text-align: start;
+    font-size: 13px;
+}
+
+.text-box {
+    text-align: center;
+}
+
+#color1 {
+    background-color: red;
+}
+#color2 {
+    background-color: blue;
+}
+#color3 {
+    background-color: green;
+}
+#color4 {
+    background-color: yellow;
+}
+#color5 {
+    background-color: pink;
+}
+#color6 {
+    background-color: black;
+}
+
+#color7 {
+    background-color: skyblue;
+}
+#color8 {
+    background-color: orange;
+}
+#color9 {
+    background-color: gray;
+}
+#color10 {
+    background-color: saddlebrown;
+}
+#color11 {
+    background-color: tomato;
+}
+#color12 {
+    background-color: darkmagenta;
+}
+#color13 {
+    background-color: goldenrod;
+}
+#color14 {
+    background-color: lawngreen;
+}
+
+
+@media screen and (min-width: 560px) {
+
+    body {
+        height: 100vh;
+    }
+    
+
+    .main {
+        height: 100%;
+        width: calc(100% - 100px);
+    }
+
+    .color-image {
+        width: 35%;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    #details {
+        font-size: 14px;
+    }
+    .explanation {
+        width: 65%;
+    }
+
+}
+
+@media screen and (min-width: 960px) {
+
+    .color-image {
+        width: 50%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .image-item {
+        display: inline;
+        object-fit:cover;
+    }
+
+    .image-item img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .xplanation {
+        width: 50%;
+    }
+
+    #details {
+        font-size: 20px;
+    }
+}
